@@ -13,8 +13,7 @@ $(document).ready(function(){
 	$('#numberOfLosses').text(losses);
 
     $('#green').on('click', function(){
-		score=score + num4;
-		console.log("New score=" + score);
+		score=score + greenNumber;
         $('#totalScore').text(score);
         
 			if(score === Random){
@@ -27,7 +26,6 @@ $(document).ready(function(){
     
 	$('#red').on('click', function(){
 		score=score + redNumber;
-		console.log("New score=" + score);
         $('#totalScore').text(score);
         
 			if(score === Random){
